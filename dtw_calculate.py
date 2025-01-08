@@ -75,7 +75,7 @@ if __name__ == "__main__":
 #     rows = manager.counter(total=pt_no, desc="Rows", unit="ecgs", color="blue")
 #     print('loaded enlighten manager')
 
-    # Loading ECGs        
+    # Loading ECGs
     for i in tqdm(range(pt_no)):
         ecg1_id = ecgno[i].split('_')
         ecg1_hd5 = h5py.File(os.path.join(args.dir_unl, ecg1_id[0], ecg1_id[1]+'.hd5'), 'r')
